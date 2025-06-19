@@ -3,6 +3,7 @@ import '@once-ui-system/core/css/tokens.css';
 import '@/resources/custom.css'
 
 import classNames from "classnames";
+import React from "react";
 
 import { Background, Column, Flex, Meta, opacity, SpacingToken } from "@once-ui-system/core";
 import { Footer, Header, RouteGuard, Providers } from '@/components';

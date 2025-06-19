@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { ImageResponse } from "next/og";
 import { baseURL, person } from "@/resources";
+import React from "react";
 
 export const config = {
   runtime: "nodejs",

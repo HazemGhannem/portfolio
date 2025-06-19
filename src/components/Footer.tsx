@@ -1,3 +1,4 @@
+import React from "react";
 import { Flex, IconButton, SmartLink, Text } from "@once-ui-system/core";
 import { person, social } from "@/resources";
 import styles from "./Footer.module.scss";
@@ -25,7 +26,6 @@ export const Footer = () => {
         <Text variant="body-default-s" onBackground="neutral-strong">
           <Text onBackground="neutral-weak">© {currentYear} /</Text>
           <Text paddingX="4">{person.name}</Text>
-       
         </Text>
         <Flex gap="16">
           {social.map(
@@ -39,7 +39,7 @@ export const Footer = () => {
                   size="s"
                   variant="ghost"
                 />
-              ),
+              )
           )}
         </Flex>
       </Flex>
