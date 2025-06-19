@@ -1,4 +1,14 @@
 {
   "extends": ["next/core-web-vitals", "eslint:recommended"],
-  "rules": {}
+  "rules": {
+    "no-unused-vars": "off",
+    "no-undef": [
+      "error",
+      {
+        "typeof": true
+      }
+    ],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  }
 }

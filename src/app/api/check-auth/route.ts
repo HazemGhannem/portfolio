@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 import * as cookie from "cookie";
-import React from "react";
 
 export async function GET(request: NextRequest) {
   const cookieHeader = request.headers.get("cookie") || "";

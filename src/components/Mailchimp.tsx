@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 
 import { mailchimp } from "@/resources";
 import { Button, Flex, Heading, Input, Text, Background, Column } from "@once-ui-system/core";

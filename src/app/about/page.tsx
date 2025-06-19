@@ -104,7 +104,7 @@ export default function About() {
             </Flex>
             {person.languages.length > 0 && (
               <Flex wrap gap="8">
-                {person.languages.map((language, index) => (
+                {person.languages.map((language) => (
                   <Tag key={language} size="l">
                     {language}
                   </Tag>
@@ -252,7 +252,7 @@ export default function About() {
                     </Text>
                     <Column as="ul" gap="16">
                       {experience.achievements.map(
-                        (achievement: JSX.Element, index: number) => (
+                        (achievement: any, index: number) => (
                           <Text
                             as="li"
                             variant="body-default-m"
