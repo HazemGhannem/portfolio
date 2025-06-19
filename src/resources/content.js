@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Hazem",
+  lastName: "Ghannem",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Full Stack Engineer",
+  avatar: "/images/hazem-avatar.png", // Replace with your actual image path
+  email: "ghannemhazem@gmail.com",
+  location: "Tunisia",
+  languages: ["English", "French", "Arabic"],
 };
 
 const newsletter = {
@@ -18,29 +18,22 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about full stack development, new tech stacks, and my
+      experience building scalable web and mobile applications.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/HazemGhannem",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/hazem-ghannem-6058b71a6/",
   },
   {
     name: "Email",
@@ -55,16 +48,23 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: (
+    <>Building efficient full stack solutions with React, Node, Django & more</>
+  ),
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: (
+      <>
+        Recent project: <strong className="ml-4">Tawsilet</strong>
+      </>
+    ),
+    href: "/work/Tawsilet",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Hazem, a software engineer focused on delivering clean, scalable
+      solutions using modern web technologies. I build production-ready systems
+      for the real world.
     </>
   ),
 };
@@ -82,60 +82,122 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "https://cal.com/hazem-ghannem",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hazem is a Tunis-based Full Stack Engineer with a strong background in
+        building modern web and mobile applications. His stack includes React,
+        Node.js, Django, and React Native, with a focus on clean architecture
+        and scalability.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Tekmafor",
+        timeframe: "Feb 2025 – Current",
+        role: "Full Stack Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Designed and developed a full Uber-like ride-hailing system
+            (Tawsilet) including mobile app, dashboard, and website.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Built the mobile app with React Native (Expo) for drivers and
+            passengers with live location tracking and maps.
+          </>,
+          <>
+            Developed the admin dashboard and marketing website using React.js,
+            Tailwind CSS, and Ant Design.
+          </>,
+          <>
+            Architected the backend using Node.js (Express) and integrated
+            Firebase for authentication and real-time updates.
+          </>,
+          <>
+            Integrated OneSignal for push notifications across mobile and web
+            platforms.
+          </>,
+          <>
+            Built a role-based access system for admins, owners, and drivers
+            with secure data separation.
+          </>,
+          <>
+            Implemented financial logic for ride commissions, revenue tracking,
+            and driver payouts.
+          </>,
+          <>
+            Handled deployment, APK generation, and delivery for Android using
+            Expo workflows.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Sparkling.co",
+        timeframe: "Jan 2024 – Feb 2025",
+        role: "Full Stack Web Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Led development of AcePoint, a feature-rich web and mobile platform
+            with modern UX.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Built the frontend using Next.js and Tailwind CSS for a performant,
+            responsive interface.
+          </>,
+          <>
+            Used Firebase for auth, real-time DB, FCM push notifications, and
+            cloud functions.
+          </>,
+          <>
+            Developed mobile app using Expo for seamless cross-platform
+            compatibility.
+          </>,
+          <>
+            Integrated real-time notifications and chat functionality across
+            devices.
+          </>,
+          <>
+            Wrote E2E and unit tests using Jest and Playwright, improving code
+            quality.
+          </>,
+          <>
+            Implemented CI/CD pipelines for auto deployment and streamlined
+            workflows.
+          </>,
+          <>Used Git and GitHub for version control and team collaboration.</>,
+          <>Managed APK export and Play Store deployment workflows.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Glance",
+        timeframe: "Jan 2024 – Feb 2025",
+        role: "Full Stack Engineer",
+        achievements: [
+          <>Led development of Glance, a real-time data-driven web app.</>,
+          <>Designed responsive frontend using Next.js and Tailwind CSS.</>,
+          <>Built real-time data processing and updates to improve UX.</>,
+          <>
+            Implemented backend with Django and MongoDB for scalable data
+            management.
+          </>,
+          <>Used Jest and Playwright for comprehensive testing coverage.</>,
+          <>
+            Applied Lighthouse audits to improve speed, accessibility, and SEO.
+          </>,
+          <>Managed CI/CD pipelines for testing and deployment.</>,
+          <>
+            Organized team development using Scrum (sprints, standups, retros).
           </>,
         ],
         images: [],
@@ -143,54 +205,102 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Higher Institute - ISSAT Mateur Applied Sciences and Technology of Mateur",
+        description: <>Studied Network and Telecommunication.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Private Higher School of Engineering and Technology",
+        description: <>Studied Software Engineering and Web Technologies.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Frontend Development",
+        description: (
+          <>
+            Building responsive, high-performance UIs using React, Next.js,
+            Angular, and Tailwind CSS, with strong Lighthouse scores.
+          </>
+        ),
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Backend Development",
+        description: (
+          <>
+            Designing robust REST APIs and scalable systems using Node.js,
+            Django, Spring Boot, Symfony, Laravel, and .NET.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Mobile Development",
+        description: (
+          <>
+            Developing cross-platform mobile apps using React Native and Expo,
+            with smooth UX and performance optimizations.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "State Management",
+        description: (
+          <>
+            Managing global state using Redux and React Context for scalable and
+            maintainable applications.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Real-Time & DevOps",
+        description: (
+          <>
+            Integrating real-time features with WebSockets and managing
+            deployment using CI/CD tools, Docker, and GitHub Actions.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Version Control",
+        description: (
+          <>
+            Collaborating using Git, GitHub, and GitLab with branching
+            strategies, code reviews, and CI integrations.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Testing & QA",
+        description: (
+          <>
+            Ensuring quality and reliability through unit and end-to-end testing
+            with Jest, Playwright, and Detox.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Agile & Collaboration",
+        description: (
+          <>
+            Working in Agile/Scrum environments using Jira for sprint planning,
+            tracking, and collaborative team delivery.
+          </>
+        ),
+        images: [],
       },
     ],
   },
@@ -199,28 +309,22 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Writings on development, engineering, and learning",
+  description: `Read what ${person.name} has been working on and thinking about.`,
 };
 
 const work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `Engineering and development projects by ${person.name}`,
 };
 
 const gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  description: `A few snapshots from my journey as a developer`,
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
